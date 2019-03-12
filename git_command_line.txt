@@ -1,3 +1,7 @@
+全局配置用户名和邮箱
+命令行：git config --global user.name "Your Name"
+命令行：git config --global user.email "email@example.com"
+
 一，初始化一个git本地库
 命令：git init
 
