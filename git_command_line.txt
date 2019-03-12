@@ -41,5 +41,98 @@
 十三，将本地仓库同步到远程
 命令：git remote add origin git@github.com:cjie/learngit.git
 
+十四，将本地的master推送到远程
+命令：git push -u origin master
+命令：git putsh origin master
+
+十五，从远程库克隆
+命令：git clone git@github.com:cjie/gitskills.git
+
+十六，查看分支
+命令：git branch
+
+十七，创建分支
+命令：git branch <name>
+
+十八，切换分支
+命令：git checkout <name>
+
+十九，创建+切换分支
+命令：git checkout -b <name>
+
+二十，合并某分支到当前分支
+命令：git merge <name>
+
+二十一，删除分支
+命令：git branch -d <name>
+
+二十二， 查看分支合并图
+命令：git log --graph
+
+二十三，合并分支禁用Fast forward模式
+命令：git merge --no-ff -m <message> <name>
+
+二十四，保存工作现场
+命令：git stash
+
+二十五，回到工作现场
+命令：git stash pop
+命令：git stash apply
+
+二十六，删除stash内容
+命令：git stash drop
+
+二十七，回复指定stash
+命令：git stash apply stash@{0}
+
+二十八，丢弃一个没有合并过的分支
+命令：git branch -D <name>
+
+二十九，查看远程库信息
+命令：git remote
+
+三十， 查看远程库详细信息
+命令：git remote -v
+
+三十一，推送分支到远程库
+命令：git push origin <name>
+
+三十二，克隆远程分支
+命令：git checkout -b dev origin/dev
+
+三十三，一般工作流程
+1.从本地推送分支，
+命令：git push origin branch-name,
+2.如果推送失败，先用
+命令：git pull
+抓取远程的新提交
+3.如果合并有冲突，并在本地提交；
+4.没有冲突或者解决掉冲突后，再用
+命令：git push orgin branch-name
+推送
+注：如果git pull 提示 no tracking informatin,则索命本地分支与远程分支的链接关系没有创建，创建链接关系
+命令：git branch --set-upstream-to <branch-name> origin/<branch-name>
+
+三十四，新建一个标签
+命令：git tag <tagname>
+
+三十五，指定标签信息
+命令：git tag -a <tagname> -m <message>
+
+三十六，查看所有标签
+命令：git tag
+
+三十七，推送一个本地标签
+命令：git push origin <tagname>
+
+三十八，推送全部未推送的本地标签
+命令：git push origin --tags
+
+三十九，删除一个本地标签
+命令：git tag -d <tagname>
+
+四十，删除一个远程标签
+命令：git push origin :fefs/tags/<tagname>
+
 
 
